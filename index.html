@@ -6,7 +6,7 @@
 <title>Spin Max · Materiais de tênis de mesa</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#eff6f1;--ink:#10213a;--mut:#56627a;--card:#0cf56d;--line:#d9d6cc;--blue:#12315c;--ball:#ff7a1a;--red:#c8202f;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--bg:#eff6f1;--ink:#10213a;--mut:#56627a;--card:#e3f7ea;--line:#d9d6cc;--blue:#12315c;--ball:#ff7a1a;--red:#c8202f;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1626;--ink:#eef1f6;--mut:#a3aec2;--card:#12233b;--line:#25395a;--blue:#0a1c36;--on:#fff}}
 :root[data-theme="dark"]{--bg:#0b1626;--ink:#eef1f6;--mut:#a3aec2;--card:#12233b;--line:#25395a;--blue:#0a1c36}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
@@ -29,13 +29,9 @@ nav a{text-decoration:none;font-weight:600;font-size:15px;white-space:nowrap;opa
 .btn{display:inline-block;background:var(--ball);color:#1b0f00;font-weight:600;text-decoration:none;padding:12px 22px;border-radius:999px;border:0;font-size:16px;cursor:pointer;font-family:inherit}
 .btn.o{background:transparent;color:inherit;border:2px solid currentColor;margin-left:8px}
 .paddle{position:relative;width:min(300px,70vw);aspect-ratio:1;margin:auto}
-.blade{position:absolute;inset:0 0 18% 0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e3394a,var(--red) 60%);box-shadow:inset 0 0 0 10px #1a1a1a22,0 14px 30px #0006}
-.blade:after{content:"";position:absolute;inset:7%;border-radius:50%;border:2px dashed #fff5}
-.handle{position:absolute;left:43%;bottom:0;width:14%;height:30%;background:#c9954f;border-radius:0 0 10px 10px}
-.ball{position:absolute;right:-6%;top:6%;width:26%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffb066,var(--ball));animation:b 1.6s ease-in-out infinite alternate}
 @keyframes b{to{transform:translate(-26px,34px)}}
 .bl{animation:b 1.6s ease-in-out infinite alternate}
-@media (prefers-reduced-motion:reduce){.ball,.bl{animation:none}html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){.bl{animation:none}html{scroll-behavior:auto}}
 section{padding:64px 0}
 section h2{font-size:clamp(34px,5vw,52px);font-weight:800;margin-bottom:8px}
 .sub{color:var(--mut);max-width:60ch;margin:0 0 28px}
@@ -53,7 +49,10 @@ section h2{font-size:clamp(34px,5vw,52px);font-weight:800;margin-bottom:8px}
 .p p{margin:0;font-size:15px;color:var(--mut);flex:1}
 .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .row b{font-size:20px}
-.p .btn{padding:8px 16px;font-size:15px}
+.buy{display:flex;gap:8px;flex-wrap:wrap}
+.buy .btn{flex:1;text-align:center;padding:9px 10px;font-size:14px;white-space:nowrap}
+.btn.ml{background:#ffe600;color:#2d3277}
+.btn.ali{background:#e43225;color:#fff}
 .g{background:var(--blue);color:var(--on)}
 .g .sub{color:#e4e9e5}
 .q{background:#ffffff14;border-radius:14px;padding:22px;max-width:720px}
@@ -66,7 +65,7 @@ section h2{font-size:clamp(34px,5vw,52px);font-weight:800;margin-bottom:8px}
 .tips div{border-top:3px solid var(--ball);padding-top:12px}
 .tips h3{font-size:26px;font-weight:600;margin-bottom:6px}
 .tips p{margin:0;color:var(--mut);font-size:16px}
-footer{background:var(--blue);color:#060708;padding:34px 0;font-size:15px}
+footer{background:var(--blue);color:#c5cee0;padding:34px 0;font-size:15px}
 footer a{color:var(--on)}
 @media(max-width:760px){.hero .w{grid-template-columns:1fr}.paddle{order:-1;width:200px}}
 </style>
@@ -87,7 +86,7 @@ footer a{color:var(--on)}
 <div class="brands" id="brands"></div></div></section>
 
 <section id="loja" style="padding-top:0"><div class="w">
-<h2>Loja</h2><p class="sub">Escolha a categoria e a marca. O botão Comprar abre a busca do produto no Mercado Livre.</p>
+<h2>Loja</h2><p class="sub">Escolha a categoria e a marca. Escolha onde comprar: Mercado Livre ou AliExpress.</p>
 <div class="bar" id="fc" role="group" aria-label="Categoria"></div>
 <div class="bar" id="fb" role="group" aria-label="Marca"></div>
 <div class="grid" id="grid" aria-live="polite"></div></div></section>
@@ -110,37 +109,47 @@ footer a{color:var(--on)}
 <footer><div class="w">Spin Max · Marcas citadas pertencem aos seus respectivos donos. Preços de referência: confirme no anúncio. Dúvidas? <a href="https://wa.me/5532999999999" rel="noopener">Fale no WhatsApp</a>.</div></footer>
 
 <script>
-var B={Butterfly:{c:'#d4152b',d:'Referência mundial. Qualidade constante, linha Tenergy.'},
+var B={Butterfly:{c:'#d4152b',d:'Referência mundial. Qualidade constante, linha Tenergy e Dignics.'},
 Donic:{c:'#1b6fb5',d:'Alemã. Controle e ótimo custo-benefício.'},
 Joola:{c:'#e8a000',d:'Alemã. Bom equilíbrio para quem está evoluindo.'},
 Xiom:{c:'#7a3fb0',d:'Coreana. Rápida, com muita rotação, preço acessível.'},
 Yasaka:{c:'#2f8a55',d:'Japonesa. Madeiras clássicas e borrachas de alto efeito.'},
-Butterfly:{c:'#2f8a55',d:'Japonesa. Madeiras clássicas e borrachas de alto efeito.'},
-Yinhe:{c:'#2f8a55',d:'Chinesa. Madeiras clássicas e borrachas de alto efeito.'},
-Stiga:{c:'#2f8a55',d:'Sueca. Madeiras clássicas e borrachas de alto efeito.'},
+Yinhe:{c:'#0d8a8a',d:'Chinesa. Madeiras ofensivas de alto desempenho.'},
+Stiga:{c:'#d4a017',d:'Sueca. Madeiras clássicas usadas por campeões.'},
 DHS:{c:'#c8202f',d:'Chinesa. Hurricane: o padrão do estilo chinês.'}};
+/* Lojas por marca: ml = Mercado Livre, ali = AliExpress */
+var L={Butterfly:['ml'],Donic:['ml'],Joola:['ml'],Xiom:['ml'],Stiga:['ml'],DHS:['ml','ali'],Yinhe:['ml','ali'],Yasaka:['ml','ali']};
+/* Formato: [categoria, marca, nome, descrição, preço, links opcionais]
+   links opcionais: {ml:'link do Mercado Livre', ali:'link do AliExpress'}
+   use ml:false ou ali:false para esconder uma loja; um link informado mostra a loja mesmo que a marca não a use */
 var P=[
-['Borracha','Butterfly','Tenergy 05','Rotação e velocidade de nível profissional.',519],
-['Borracha','Butterfly','Dignics 05','Rotação e velocidade de nível profissional.',645],
-['Borracha','Butterfly','Dignics 09c','Rotação e velocidade de nível profissional.',645],
-['Borracha','Butterfly','Rozena','Moderna, fácil de controlar.',330],
+['Borracha','Butterfly','Tenergy 05','A raquete Tenergy oferece uma sensação única graças à combinação da tecnologia High Tension com a esponja Spring Sponge. Os pinos de código 05 foram adotados; essa combinação permite imprimir muito efeito à bola. A Tenergy 05 possibilita uma gama completa de jogadas com topspin.',519],
+['Borracha','Butterfly','Dignics 05','A Dignics eleva seu jogo a um nível mais avançado. A essência está na combinação da Spring Sponge X, a versão avançada da Spring Sponge com maior elasticidade, e da camada superior com composição exclusiva e abrasão reforçada, que proporciona grande resistência na superfície, dando a sensação de controle total da bola no impacto. Com pinos de código 05, reconhecidos por seu alto desempenho em spin, a Dignics 05 é recomendada para jogadores que buscam um jogo ofensivo de alto nível, com topspin potente, além de contra-topspin tanto perto da mesa quanto a média distância.',645],
+['Borracha','Butterfly','Dignics 09c','A fricção ideal e o alto nível de ressalto são alcançados graças à sinergia entre a camada superior original e a esponja Spring Sponge X, bastante rígida, que realça as características de uma borracha de fricção, ao mesmo tempo que aprimora o efeito High Tension. Os pinos de código nº 209 proporcionam topspin e jogo defensivo com alto giro, além de facilitar técnicas sobre a mesa e contra-topspin. A Dignics 09C, com as características aprimoradas de fricção High Tension, leva o jogador que busca a sensação única de uma borracha de fricção a um novo patamar.',645],
+['Borracha','Butterfly','Rozena','Uma borracha equipada com a inovadora tecnologia Spring Sponge, tem como principal característica a alta tolerância, alcançada graças à combinação da esponja Spring Sponge tingida de rosa com uma camada superior desenvolvida exclusivamente para essa finalidade. A tecnologia High Tension, exclusiva da Butterfly, permite golpes potentes e um alto nível de consistência no jogo.',339],
+['Borracha','Butterfly','Glayzer 09C','A borracha Glayzer 09C possui a tecnologia Grey Spring Sponge X. Ela permite golpes com trajetória estável, combinando efeitos potentes e pesados ​​com a facilidade de técnicas de alto nível sobre a mesa. Isso se deve à combinação de uma camada superior de fricção que proporciona o efeito High Tension e a Spring Sponge X com dureza de 42 graus.',419],
+['Borracha','Butterfly','Glayzer','A borracha Glayzer utiliza a esponja Spring Sponge X. A potência gerada pelo efeito é transferida para cada golpe. Além disso, uma trajetória estável é possível graças à combinação de uma camada superior que proporciona a sensação ideal ao segurar a bola e a resistência à abrasão reforçada da superfície com a esponja Spring Sponge X, de dureza 38 graus.',419],
+['Borracha','Butterfly','Zyre-03',' Butterfly Zyre-03, na versão 2.7mm, é uma borracha de alto desempenho que integra a tecnologia Ricosheet à esponja Spring Sponge X. É destinada a jogadores de n´vel profissional com estilo de jogo ofensivo em spin e potência.',889],
 ['Borracha','Donic','Bluefire M1','Esponja macia, muito controle e efeito.',280],
 ['Borracha','Joola','Rhyzm','Equilíbrio entre efeito e velocidade.',300],
 ['Borracha','Xiom','Vega Pro','Alta rotação com preço justo.',250],
-['Borracha','Yasaka','Rakza 7','Bom para ataque e topspin.',340],
+['Borracha','Yasaka','Rakza 7','Bom para ataque e topspin.',245.99],
 ['Borracha','DHS','Hurricane 3 Neo','Estilo chinês, muito efeito. Exige técnica.',230],
 ['Borracha','DHS','Hurricane 8','Estilo chinês, muito efeito. Exige técnica.',230],
-['Borracha','DHS','GoldArc 9','Estilo Europeu, controle e Spin em suas mãos.',230],
-['Madeira','Butterfly','Timo Boll ALC','Ataque rápido com carbono.',1.499],
-['Madeira','Butterfly','Primorac','All-round clássica para evoluir.',837],
+['Borracha','DHS','GoldArc 9','Estilo europeu, controle e spin em suas mãos.',230],
+['Madeira','Butterfly','Timo Boll ALC','Juntamente com os técnicos da Butterfly, Timo ajudou a projetar esta raquete ALC, que oferece um pouco mais de velocidade do que seu modelo anterior, mas permite os golpes de topspin potentes pelos quais ele é conhecido.Oferece a combinação máxima de velocidade, forte efeito e controle.',1005.79],
+['Madeira','Butterfly',' Fan Zhendong ALC',' Equipada com ZL-Carbon, uma fibra artificial com excelente equilíbrio entre elasticidade e flexibilidade, esta raquete combina potência com estabilidade e não será sobrepujada pelos golpes do seu adversário.',1467.94],
+['Madeira','Butterfly',' Fan Zhendong Super ALC','Equipada com Super ZL-Carbon, uma trama de alta densidade de carbono e fibra ZL, a raquete apresenta um bom rebote que proporciona golpes potentes e estabilidade devido à expansão da área de alta reação.',2174.75],
 ['Madeira','Donic','Waldner Senso Carbon','Equilíbrio entre controle e velocidade.',550],
-['Madeira','Donic','Donic Original Carbospeed',' OFF / OFF+ (Ofensiva / Extremo Ofensivo).',550],
+['Madeira','Donic','Donic Original Carbospeed','OFF / OFF+ (ofensiva / extremo ofensiva).',550],
 ['Madeira','Joola','Rosskopf Classic','Controle para jogo de base.',320],
 ['Madeira','Xiom','Vega Tour','Ofensiva com boa sensação.',380],
-['Madeira','Yasaka','Mark V','Clássica, queridinha dos jogadores.',350],
-['Madeira','Yinhe','Yinhe V14 pro','Ofensiva (OFF/OFF+) de alto desempenho, ALC (Arylate-Carbon / Carbono Aramid).',350],
+['Madeira','Yasaka',' Ma Lin Extra','Clássica, queridinha dos jogadores.',437.99],
+['Madeira','Yinhe','Yinhe V14 Pro','É uma raquete/lâmina de tênis de mesa de alto desempenho, muito popular como alternativa de excelente custo-benefício a modelos clássicos como a Butterfly Viscaria ou Timo Boll ALC.',350],
+['Madeira','Yinhe','Yinhe T11s','É uma madeira de tênis de mesa (raquete) de alto desempenho, muito conhecida pela sua extrema leveza e velocidade explosiva.',132.99],
+['Madeira','Yinhe','Yinhe pro 01','É uma lâmina (blade) de tênis de mesa de alto desempenho, muito conhecida por ser uma alternativa de excelente custo-benefício (frequentemente comparada como um "clone" ou inspirada na clássica Butterfly Viscaria).',217.99],
 ['Madeira','DHS','Hurricane Long 5','Madeira chinesa de ataque.',420],
-['Madeira','Stiga','Cybershape Future 3-star','Madeira clássica do famoso jogador Truls Moregardh.',2.789],
+['Madeira','Stiga','Cybershape Future 3-star','Madeira clássica do famoso jogador Truls Moregardh.',2789],
 ['Bolinha','Butterfly','G40+ 3 estrelas (3 un.)','Bolinha de torneio.',60],
 ['Bolinha','Donic','Elite 40+ 3 estrelas (3 un.)','Aprovada para competição.',55],
 ['Bolinha','Joola','Prime 40+ (3 un.)','Resistente para treino e jogo.',50],
@@ -153,7 +162,15 @@ chips('fc',['Todas','Borracha','Madeira','Bolinha'],cat,function(v){cat=v;draw()
 chips('fb',['Todas'].concat(Object.keys(B)),br,function(v){br=v;draw()});
 var h='';P.forEach(function(p){if((cat!='Todas'&&p[0]!=cat)||(br!='Todas'&&p[1]!=br))return;
 var q=encodeURIComponent(p[1]+' '+p[2]+' tenis de mesa');
-h+='<div class="p" style="border-top:5px solid '+B[p[1]].c+'"><span class="tag">'+p[0]+' · '+p[1]+'</span><h3>'+esc(p[2])+'</h3><p>'+esc(p[3])+'</p><div class="row"><b>R$ '+p[4]+'</b><a class="btn" target="_blank" rel="noopener" href="https://lista.mercadolivre.com.br/'+q.replace(/%20/g,'-')+'">Comprar</a></div></div>'});
+var ml='https://lista.mercadolivre.com.br/'+q.replace(/%20/g,'-');
+var ali='https://pt.aliexpress.com/wholesale?SearchText='+q;
+var o=p[5]||{};
+var S=[['Mercado Livre',ml,'ml'],['AliExpress',ali,'ali']];
+var ok=L[p[1]]||['ml'];
+var bt='';S.forEach(function(s){var k=s[2],c=o[k];var u=typeof c==='string'?c:s[1];
+if(c===false||(ok.indexOf(k)<0&&typeof c!=='string'))return;
+bt+='<a class="btn '+k+'" target="_blank" rel="noopener" href="'+u+'">'+s[0]+'</a>'});
+h+='<div class="p" style="border-top:5px solid '+B[p[1]].c+'"><span class="tag">'+p[0]+' · '+p[1]+'</span><h3>'+esc(p[2])+'</h3><p>'+esc(p[3])+'</p><div class="row"><b>R$ '+p[4].toLocaleString('pt-BR')+'</b></div><div class="buy">'+bt+'</div></div>'});
 document.getElementById('grid').innerHTML=h||'<p class="sub">Nenhum produto com esse filtro. Tente outra marca.</p>'}
 var bh='';Object.keys(B).forEach(function(k){bh+='<button class="brand" style="--c:'+B[k].c+'" data-b="'+k+'"><h3>'+k+'</h3><small>'+B[k].d+'</small></button>'});
 document.getElementById('brands').innerHTML=bh;
@@ -163,7 +180,6 @@ var Q=[
 {t:'Qual é o seu nível?',o:[['Estou começando','c'],['Jogo por lazer ou em clube','m'],['Compito com frequência','a']]},
 {t:'Como você gosta de jogar?',o:[['Defendo e controlo a bola','c'],['Um pouco de tudo','m'],['Ataco com topspin','a']]},
 {t:'Qual é o seu orçamento?',o:[['Econômico','e'],['Médio','m'],['Sem limite','p']]}];
-var R={cc:['Donic','Controle e preço bom: madeira all-round com borrachas macias da Donic ajudam a aprender os golpes.'],cm:['Joola','Joola oferece materiais equilibrados para evoluir sem pagar caro.'],ca:['Butterfly','Butterfly com Tenergy ou Rozena dá máxima rotação para o ataque.'],ce:['Xiom','Xiom entrega efeito e velocidade com preço acessível.'],cx:['DHS','Se gosta do estilo chinês, DHS Hurricane é o caminho, mas exige mais técnica.']};
 var s=0,a=[];
 function quiz(){var e=document.getElementById('quiz');
 if(s<Q.length){var h='<h3>'+Q[s].t+'</h3><div class="opts">';Q[s].o.forEach(function(o,i){h+='<button data-i="'+i+'">'+o[0]+'</button>'});e.innerHTML=h+'</div>';return}
