@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spin Max · Materiais de tênis de mesa</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eff6f1;--ink:#10213a;--mut:#56627a;--card:#0cf56d;--line:#d9d6cc;--blue:#12315c;--ball:#ff7a1a;--red:#c8202f;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1626;--ink:#eef1f6;--mut:#a3aec2;--card:#12233b;--line:#25395a;--blue:#0a1c36;--on:#fff}}
+:root[data-theme="dark"]{--bg:#0b1626;--ink:#eef1f6;--mut:#a3aec2;--card:#12233b;--line:#25395a;--blue:#0a1c36}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Barlow,system-ui,sans-serif}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;line-height:1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ball);outline-offset:2px}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--blue);color:var(--on);z-index:5}
+header .w{display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px}
+.logo{font:800 26px 'Barlow Condensed',sans-serif;text-decoration:none;letter-spacing:.5px}
+.logo i{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--ball);margin-right:6px}
+nav{display:flex;gap:18px;overflow-x:auto}
+nav a{text-decoration:none;font-weight:600;font-size:15px;white-space:nowrap;opacity:.9}
+.hero{background:var(--blue);color:var(--on);padding:56px 0 72px;overflow:hidden}
+.hero .w{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(46px,8vw,92px);font-weight:800}
+.hero p{max-width:46ch;font-size:19px;opacity:.9;margin:18px 0 26px}
+.btn{display:inline-block;background:var(--ball);color:#1b0f00;font-weight:600;text-decoration:none;padding:12px 22px;border-radius:999px;border:0;font-size:16px;cursor:pointer;font-family:inherit}
+.btn.o{background:transparent;color:inherit;border:2px solid currentColor;margin-left:8px}
+.paddle{position:relative;width:min(300px,70vw);aspect-ratio:1;margin:auto}
+.blade{position:absolute;inset:0 0 18% 0;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e3394a,var(--red) 60%);box-shadow:inset 0 0 0 10px #1a1a1a22,0 14px 30px #0006}
+.blade:after{content:"";position:absolute;inset:7%;border-radius:50%;border:2px dashed #fff5}
+.handle{position:absolute;left:43%;bottom:0;width:14%;height:30%;background:#c9954f;border-radius:0 0 10px 10px}
+.ball{position:absolute;right:-6%;top:6%;width:26%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffb066,var(--ball));animation:b 1.6s ease-in-out infinite alternate}
+@keyframes b{to{transform:translate(-26px,34px)}}
+.bl{animation:b 1.6s ease-in-out infinite alternate}
+@media (prefers-reduced-motion:reduce){.ball,.bl{animation:none}html{scroll-behavior:auto}}
+section{padding:64px 0}
+section h2{font-size:clamp(34px,5vw,52px);font-weight:800;margin-bottom:8px}
+.sub{color:var(--mut);max-width:60ch;margin:0 0 28px}
+.brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.brand{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:10px;padding:16px;cursor:pointer;text-align:left;font:inherit;color:inherit}
+.brand h3{font-size:30px;font-weight:800}
+.brand small{display:block;color:var(--mut);margin-top:6px;font-size:15px;line-height:1.4}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:7px 15px;border-radius:999px;font:600 15px Barlow,sans-serif;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.p{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.tag{font-size:14px;color:var(--mut)}
+.p h3{font-size:26px;font-weight:600}
+.p p{margin:0;font-size:15px;color:var(--mut);flex:1}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.row b{font-size:20px}
+.p .btn{padding:8px 16px;font-size:15px}
+.g{background:var(--blue);color:var(--on)}
+.g .sub{color:#e4e9e5}
+.q{background:#ffffff14;border-radius:14px;padding:22px;max-width:720px}
+.q h3{font-size:28px;margin-bottom:14px;font-weight:600}
+.opts{display:grid;gap:10px}
+.opts button{text-align:left;font:500 17px Barlow,sans-serif;padding:12px 16px;border-radius:10px;border:1.5px solid #ffffff55;background:transparent;color:inherit;cursor:pointer}
+.opts button:hover{background:#ffffff22}
+.res h3{font-size:40px;color:var(--ball);font-weight:800}
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.tips div{border-top:3px solid var(--ball);padding-top:12px}
+.tips h3{font-size:26px;font-weight:600;margin-bottom:6px}
+.tips p{margin:0;color:var(--mut);font-size:16px}
+footer{background:var(--blue);color:#060708;padding:34px 0;font-size:15px}
+footer a{color:var(--on)}
+@media(max-width:760px){.hero .w{grid-template-columns:1fr}.paddle{order:-1;width:200px}}
+</style>
+</head>
+<body>
+<header><div class="w"><a class="logo" href="#"><i></i>Spin Max</a>
+<nav><a href="#marcas">Marcas</a><a href="#loja">Loja</a><a href="#guia">Guia</a><a href="#dicas">Dicas</a></nav></div></header>
+
+<div class="hero"><div class="w">
+<div><h1>Tudo para a sua raquete.</h1>
+<p>Borrachas, madeiras e bolinhas de Butterfly, Donic, Joola, Xiom, Yasaka e DHS. Não sabe por onde começar? Responda 3 perguntas e veja qual marca combina com o seu jogo.</p>
+<a class="btn" href="#loja">Ver produtos</a><a class="btn o" href="#guia">Escolher minha marca</a></div>
+<svg class="paddle" viewBox="0 0 320 320" role="img" aria-label="Logo Spin Max"><defs><radialGradient id="lg" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffc98f"/><stop offset=".45" stop-color="#ff7a1a"/><stop offset="1" stop-color="#d94e00"/></radialGradient></defs><g stroke="#fff" stroke-linecap="round" opacity=".55"><path d="M10 95h60" stroke-width="6"/><path d="M0 125h50" stroke-width="6"/><path d="M18 155h44" stroke-width="6"/></g><g class="bl"><circle cx="185" cy="125" r="88" fill="url(#lg)"/><ellipse cx="185" cy="125" rx="118" ry="34" transform="rotate(-28 185 125)" fill="none" stroke="#fff" stroke-width="7" stroke-dasharray="150 40 70 40" stroke-linecap="round"/><path d="M135 85a62 62 0 0 1 40-24" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="9" stroke-linecap="round"/></g><text x="160" y="272" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="800" font-style="italic" font-size="78" fill="#fff" letter-spacing="2">SPIN <tspan fill="#ff7a1a">MAX</tspan></text><path d="M70 292h180" stroke="#ff7a1a" stroke-width="5" stroke-linecap="round"/></svg>
+</div></div>
+
+<section id="marcas"><div class="w">
+<h2>Marcas</h2><p class="sub">Toque em uma marca para filtrar a loja.</p>
+<div class="brands" id="brands"></div></div></section>
+
+<section id="loja" style="padding-top:0"><div class="w">
+<h2>Loja</h2><p class="sub">Escolha a categoria e a marca. O botão Comprar abre a busca do produto no Mercado Livre.</p>
+<div class="bar" id="fc" role="group" aria-label="Categoria"></div>
+<div class="bar" id="fb" role="group" aria-label="Marca"></div>
+<div class="grid" id="grid" aria-live="polite"></div></div></section>
+
+<section class="g" id="guia"><div class="w">
+<h2>Guia: qual marca é a minha?</h2><p class="sub">Três perguntas rápidas. É uma sugestão de partida, não uma regra.</p>
+<div class="q" id="quiz"></div></div></section>
+
+<section id="dicas"><div class="w">
+<h2>Como escolher o material</h2><p class="sub">O básico para não errar na compra.</p>
+<div class="tips">
+<div><h3>Madeira (blade)</h3><p>Mais camadas e carbono dão velocidade e menos tato. All-round (5 camadas de madeira) é o ideal para aprender.</p></div>
+<div><h3>Borracha</h3><p>Lisa (liso) gera efeito e velocidade. Esponja fina controla mais; grossa (2.0 mm) rende mais potência.</p></div>
+<div><h3>Borracha chinesa vs. europeia</h3><p>Chinesas (DHS, Yasaka) têm superfície dura e tensionada; europeias (Donic, Joola, Butterfly) são mais fáceis de dominar.</p></div>
+<div><h3>Bolinhas</h3><p>Use bolinhas de plástico 40+ com 3 estrelas em treinos sérios e torneios. 1 estrela serve para treino de cesto.</p></div>
+<div><h3>Cores e lados</h3><p>Uma borracha vermelha e outra preta são obrigatórias pela regra oficial.</p></div>
+<div><h3>Manutenção</h3><p>Limpe a borracha com espuma úmida e guarde com película protetora para durar mais.</p></div>
+</div></div></section>
+
+<footer><div class="w">Spin Max · Marcas citadas pertencem aos seus respectivos donos. Preços de referência: confirme no anúncio. Dúvidas? <a href="https://wa.me/5532999999999" rel="noopener">Fale no WhatsApp</a>.</div></footer>
+
+<script>
+var B={Butterfly:{c:'#d4152b',d:'Referência mundial. Qualidade constante, linha Tenergy.'},
+Donic:{c:'#1b6fb5',d:'Alemã. Controle e ótimo custo-benefício.'},
+Joola:{c:'#e8a000',d:'Alemã. Bom equilíbrio para quem está evoluindo.'},
+Xiom:{c:'#7a3fb0',d:'Coreana. Rápida, com muita rotação, preço acessível.'},
+Yasaka:{c:'#2f8a55',d:'Japonesa. Madeiras clássicas e borrachas de alto efeito.'},
+Butterfly:{c:'#2f8a55',d:'Japonesa. Madeiras clássicas e borrachas de alto efeito.'},
+Yinhe:{c:'#2f8a55',d:'Chinesa. Madeiras clássicas e borrachas de alto efeito.'},
+Stiga:{c:'#2f8a55',d:'Sueca. Madeiras clássicas e borrachas de alto efeito.'},
+DHS:{c:'#c8202f',d:'Chinesa. Hurricane: o padrão do estilo chinês.'}};
+var P=[
+['Borracha','Butterfly','Tenergy 05','Rotação e velocidade de nível profissional.',519],
+['Borracha','Butterfly','Dignics 05','Rotação e velocidade de nível profissional.',645],
+['Borracha','Butterfly','Dignics 09c','Rotação e velocidade de nível profissional.',645],
+['Borracha','Butterfly','Rozena','Moderna, fácil de controlar.',330],
+['Borracha','Donic','Bluefire M1','Esponja macia, muito controle e efeito.',280],
+['Borracha','Joola','Rhyzm','Equilíbrio entre efeito e velocidade.',300],
+['Borracha','Xiom','Vega Pro','Alta rotação com preço justo.',250],
+['Borracha','Yasaka','Rakza 7','Bom para ataque e topspin.',340],
+['Borracha','DHS','Hurricane 3 Neo','Estilo chinês, muito efeito. Exige técnica.',230],
+['Borracha','DHS','Hurricane 8','Estilo chinês, muito efeito. Exige técnica.',230],
+['Borracha','DHS','GoldArc 9','Estilo Europeu, controle e Spin em suas mãos.',230],
+['Madeira','Butterfly','Timo Boll ALC','Ataque rápido com carbono.',1.499],
+['Madeira','Butterfly','Primorac','All-round clássica para evoluir.',837],
+['Madeira','Donic','Waldner Senso Carbon','Equilíbrio entre controle e velocidade.',550],
+['Madeira','Donic','Donic Original Carbospeed',' OFF / OFF+ (Ofensiva / Extremo Ofensivo).',550],
+['Madeira','Joola','Rosskopf Classic','Controle para jogo de base.',320],
+['Madeira','Xiom','Vega Tour','Ofensiva com boa sensação.',380],
+['Madeira','Yasaka','Mark V','Clássica, queridinha dos jogadores.',350],
+['Madeira','Yinhe','Yinhe V14 pro','Ofensiva (OFF/OFF+) de alto desempenho, ALC (Arylate-Carbon / Carbono Aramid).',350],
+['Madeira','DHS','Hurricane Long 5','Madeira chinesa de ataque.',420],
+['Madeira','Stiga','Cybershape Future 3-star','Madeira clássica do famoso jogador Truls Moregardh.',2.789],
+['Bolinha','Butterfly','G40+ 3 estrelas (3 un.)','Bolinha de torneio.',60],
+['Bolinha','Donic','Elite 40+ 3 estrelas (3 un.)','Aprovada para competição.',55],
+['Bolinha','Joola','Prime 40+ (3 un.)','Resistente para treino e jogo.',50],
+['Bolinha','DHS','D40+ 3 estrelas (6 un.)','Usada em campeonatos.',90]];
+var cat='Todas',br='Todas';
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function chips(id,list,cur,fn){var e=document.getElementById(id);e.innerHTML='';list.forEach(function(v){var b=document.createElement('button');b.className='chip';b.textContent=v;b.setAttribute('aria-pressed',v===cur);b.onclick=function(){fn(v)};e.appendChild(b)})}
+function draw(){
+chips('fc',['Todas','Borracha','Madeira','Bolinha'],cat,function(v){cat=v;draw()});
+chips('fb',['Todas'].concat(Object.keys(B)),br,function(v){br=v;draw()});
+var h='';P.forEach(function(p){if((cat!='Todas'&&p[0]!=cat)||(br!='Todas'&&p[1]!=br))return;
+var q=encodeURIComponent(p[1]+' '+p[2]+' tenis de mesa');
+h+='<div class="p" style="border-top:5px solid '+B[p[1]].c+'"><span class="tag">'+p[0]+' · '+p[1]+'</span><h3>'+esc(p[2])+'</h3><p>'+esc(p[3])+'</p><div class="row"><b>R$ '+p[4]+'</b><a class="btn" target="_blank" rel="noopener" href="https://lista.mercadolivre.com.br/'+q.replace(/%20/g,'-')+'">Comprar</a></div></div>'});
+document.getElementById('grid').innerHTML=h||'<p class="sub">Nenhum produto com esse filtro. Tente outra marca.</p>'}
+var bh='';Object.keys(B).forEach(function(k){bh+='<button class="brand" style="--c:'+B[k].c+'" data-b="'+k+'"><h3>'+k+'</h3><small>'+B[k].d+'</small></button>'});
+document.getElementById('brands').innerHTML=bh;
+document.getElementById('brands').onclick=function(e){var b=e.target.closest('.brand');if(!b)return;br=b.dataset.b;cat='Todas';draw();document.getElementById('loja').scrollIntoView()};
+draw();
+var Q=[
+{t:'Qual é o seu nível?',o:[['Estou começando','c'],['Jogo por lazer ou em clube','m'],['Compito com frequência','a']]},
+{t:'Como você gosta de jogar?',o:[['Defendo e controlo a bola','c'],['Um pouco de tudo','m'],['Ataco com topspin','a']]},
+{t:'Qual é o seu orçamento?',o:[['Econômico','e'],['Médio','m'],['Sem limite','p']]}];
+var R={cc:['Donic','Controle e preço bom: madeira all-round com borrachas macias da Donic ajudam a aprender os golpes.'],cm:['Joola','Joola oferece materiais equilibrados para evoluir sem pagar caro.'],ca:['Butterfly','Butterfly com Tenergy ou Rozena dá máxima rotação para o ataque.'],ce:['Xiom','Xiom entrega efeito e velocidade com preço acessível.'],cx:['DHS','Se gosta do estilo chinês, DHS Hurricane é o caminho, mas exige mais técnica.']};
+var s=0,a=[];
+function quiz(){var e=document.getElementById('quiz');
+if(s<Q.length){var h='<h3>'+Q[s].t+'</h3><div class="opts">';Q[s].o.forEach(function(o,i){h+='<button data-i="'+i+'">'+o[0]+'</button>'});e.innerHTML=h+'</div>';return}
+var lvl=a[0],sty=a[1],bud=a[2],r;
+if(bud=='e')r=['Xiom','Xiom entrega efeito e velocidade com preço acessível. Para iniciantes, comece com uma madeira all-round.'];
+else if(sty=='a'&&bud=='p')r=['Butterfly','Butterfly com Tenergy dá máxima rotação e velocidade para quem ataca e compete.'];
+else if(sty=='a')r=['DHS','Hurricane e outros materiais chineses rendem muito efeito. Exigem mais técnica, mas custam menos.'];
+else if(sty=='c'&&lvl=='c')r=['Donic','Donic oferece controle e preço bom para aprender os golpes sem muita velocidade.'];
+else if(lvl=='a')r=['Yasaka','Yasaka tem madeiras clássicas e borrachas de alto efeito para jogadores completos.'];
+else r=['Joola','Joola oferece materiais equilibrados para evoluir sem pagar caro.'];
+e.innerHTML='<div class="res"><p>Sugestão para você:</p><h3>'+r[0]+'</h3><p>'+r[1]+'</p><button class="btn" id="see">Ver produtos '+r[0]+'</button> <button class="btn o" id="rs">Refazer</button></div>';
+document.getElementById('see').onclick=function(){br=r[0];cat='Todas';draw();document.getElementById('loja').scrollIntoView()};
+document.getElementById('rs').onclick=function(){s=0;a=[];quiz()}}
+document.getElementById('quiz').onclick=function(e){var b=e.target.closest('[data-i]');if(!b)return;a.push(Q[s].o[b.dataset.i][1]);s++;quiz()};
+quiz();
+</script>
+</body>
+</html>
