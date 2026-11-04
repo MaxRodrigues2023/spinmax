@@ -3,205 +3,179 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Spin Max · Materiais de tênis de mesa</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<title>SpinMax – Tênis de mesa: borrachas, madeiras, bolinhas e mais</title>
+<meta name="description" content="Compare borrachas, madeiras, bolinhas, sidetapes e camisas de tênis de mesa das melhores marcas e compre nas maiores lojas online.">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#eff6f1;--ink:#10213a;--mut:#56627a;--card:#e3f7ea;--line:#d9d6cc;--blue:#12315c;--ball:#ff7a1a;--red:#c8202f;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1626;--ink:#eef1f6;--mut:#a3aec2;--card:#12233b;--line:#25395a;--blue:#0a1c36;--on:#fff}}
-:root[data-theme="dark"]{--bg:#0b1626;--ink:#eef1f6;--mut:#a3aec2;--card:#12233b;--line:#25395a;--blue:#0a1c36}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Barlow,system-ui,sans-serif}
-h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;line-height:1;margin:0}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--ball);outline-offset:2px}
-.w{max-width:1080px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--blue);color:var(--on);z-index:5}
-header .w{display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px}
-.logo{font:800 26px 'Barlow Condensed',sans-serif;text-decoration:none;letter-spacing:.5px}
-.logo i{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--ball);margin-right:6px}
-nav{display:flex;gap:18px;overflow-x:auto}
-nav a{text-decoration:none;font-weight:600;font-size:15px;white-space:nowrap;opacity:.9}
-.hero{background:var(--blue);color:var(--on);padding:56px 0 72px;overflow:hidden}
-.hero .w{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
-.hero h1{font-size:clamp(46px,8vw,92px);font-weight:800}
-.hero p{max-width:46ch;font-size:19px;opacity:.9;margin:18px 0 26px}
-.btn{display:inline-block;background:var(--ball);color:#1b0f00;font-weight:600;text-decoration:none;padding:12px 22px;border-radius:999px;border:0;font-size:16px;cursor:pointer;font-family:inherit}
-.btn.o{background:transparent;color:inherit;border:2px solid currentColor;margin-left:8px}
-.paddle{position:relative;width:min(300px,70vw);aspect-ratio:1;margin:auto}
-@keyframes b{to{transform:translate(-26px,34px)}}
-.bl{animation:b 1.6s ease-in-out infinite alternate}
-@media (prefers-reduced-motion:reduce){.bl{animation:none}html{scroll-behavior:auto}}
-section{padding:64px 0}
-section h2{font-size:clamp(34px,5vw,52px);font-weight:800;margin-bottom:8px}
-.sub{color:var(--mut);max-width:60ch;margin:0 0 28px}
-.brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-.brand{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:10px;padding:16px;cursor:pointer;text-align:left;font:inherit;color:inherit}
-.brand h3{font-size:30px;font-weight:800}
-.brand small{display:block;color:var(--mut);margin-top:6px;font-size:15px;line-height:1.4}
-.bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
-.chip{border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:7px 15px;border-radius:999px;font:600 15px Barlow,sans-serif;cursor:pointer}
-.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
-.p{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px}
-.tag{font-size:14px;color:var(--mut)}
-.p h3{font-size:26px;font-weight:600}
-.p p{margin:0;font-size:15px;color:var(--mut);flex:1}
-.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.row b{font-size:20px}
-.ph{position:relative;aspect-ratio:4/3;border-radius:8px;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,var(--c),#0007);color:#fff;font:800 26px 'Barlow Condensed',sans-serif;text-align:center;padding:8px}
-.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:6px}
-.p .d{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}
-.p .d.open{-webkit-line-clamp:unset;display:block}
-.buy{display:flex;gap:8px;flex-wrap:wrap}
-.buy .btn{flex:1;text-align:center;padding:9px 10px;font-size:14px;white-space:nowrap}
-.btn.ml{background:#ffe600;color:#2d3277}
-.btn.ali{background:#e43225;color:#fff}
-.g{background:var(--blue);color:var(--on)}
-.g .sub{color:#e4e9e5}
-.q{background:#ffffff14;border-radius:14px;padding:22px;max-width:720px}
-.q h3{font-size:28px;margin-bottom:14px;font-weight:600}
-.opts{display:grid;gap:10px}
-.opts button{text-align:left;font:500 17px Barlow,sans-serif;padding:12px 16px;border-radius:10px;border:1.5px solid #ffffff55;background:transparent;color:inherit;cursor:pointer}
-.opts button:hover{background:#ffffff22}
-.res h3{font-size:40px;color:var(--ball);font-weight:800}
-.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.tips div{border-top:3px solid var(--ball);padding-top:12px}
-.tips h3{font-size:26px;font-weight:600;margin-bottom:6px}
-.tips p{margin:0;color:var(--mut);font-size:16px}
-footer{background:var(--blue);color:#c5cee0;padding:34px 0;font-size:15px}
-footer a{color:var(--on)}
-@media(max-width:760px){.hero .w{grid-template-columns:1fr}.paddle{order:-1;width:200px}}
+:root{--bg:#f7f5fd;--bg2:#eefaf3;--ink:#1d1633;--mut:#665f80;--card:#fff;--line:#e4ddf5;--p:#7a3ff2;--p2:#a678ff;--g:#1fb86b;--g2:#6fe3a5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141024;--bg2:#0f1f1b;--ink:#f1edfc;--mut:#a79fc2;--card:#1d1833;--line:#322a52}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;font:16px/1.55 'DM Sans',system-ui,sans-serif;color:var(--ink);background:var(--bg);background-image:radial-gradient(900px 500px at 8% -5%,rgba(122,63,242,.16),transparent),radial-gradient(800px 500px at 100% 20%,rgba(31,184,107,.13),transparent),linear-gradient(180deg,var(--bg),var(--bg2));background-attachment:fixed}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}.w{max-width:1120px;margin:auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{font:800 1.45rem Sora,sans-serif;text-decoration:none;background:linear-gradient(90deg,var(--p),var(--g));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{display:flex;gap:18px;font-size:.95rem}nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--p)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 1.35rem Sora,sans-serif;color:var(--ink)}.brand i{font-style:italic;background:linear-gradient(90deg,#ff9a2e,#ff6a00);-webkit-background-clip:text;background-clip:text;color:transparent}.brand svg{width:38px;height:38px}.card::before{content:"";height:4px;background:linear-gradient(90deg,var(--p),var(--g))}.lgo{height:50px;width:auto;display:block;border-radius:12px}.herologo{width:100%;max-width:340px;margin:auto;display:block;border-radius:34px;box-shadow:0 30px 70px -30px var(--p)}.hero{padding:64px 0 36px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,5.2vw,3.7rem);font-weight:800}
+.hero p{color:var(--mut);max-width:52ch;font-size:1.08rem}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;color:#fff;background:linear-gradient(100deg,var(--p),var(--g));box-shadow:0 10px 26px -10px var(--p);border:0;cursor:pointer}
+.orb{aspect-ratio:1;border-radius:50%;background:conic-gradient(from 200deg,var(--p),var(--p2),var(--g2),var(--g),var(--p));display:grid;place-items:center;max-width:340px;margin:auto;width:100%;box-shadow:0 30px 70px -30px var(--p)}
+.orb svg{width:62%}
+.hl{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 34px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 16px;border-radius:999px;font:500 .92rem 'DM Sans',sans-serif;cursor:pointer}
+.chip:hover,.chip.on{background:linear-gradient(100deg,var(--p),var(--g));color:#fff;border-color:transparent}
+.star{font-weight:700;border-color:var(--p2)}
+.tools{display:grid;gap:12px;margin:18px 0 26px}
+input[type=search]{width:100%;padding:14px 18px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+input:focus-visible,.chip:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid var(--g);outline-offset:2px}
+section{padding:34px 0}section>.w>h2{font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:6px}.sub{color:var(--mut);margin:0 0 6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 22px 40px -26px var(--p)}
+.pic{aspect-ratio:4/3;display:grid;place-items:center;background:linear-gradient(135deg,color-mix(in srgb,var(--p) 14%,var(--card)),color-mix(in srgb,var(--g) 16%,var(--card)))}
+.pic svg{width:58%;height:78%}.fb{width:100%;height:100%;display:grid;place-items:center}
+.bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tag{font-size:.78rem;font-weight:700;color:var(--p);display:flex;justify-content:space-between}
+.tag b{color:var(--g)}.card h3{font-size:1.05rem}.card p{margin:0;color:var(--mut);font-size:.92rem;flex:1}
+.shops{display:flex;flex-wrap:wrap;gap:7px;margin-top:6px}
+.shops a{font-size:.8rem;font-weight:700;padding:7px 11px;border-radius:10px;text-decoration:none;border:1px solid var(--line);background:var(--bg)}
+.shops a:hover{background:var(--p);color:#fff;border-color:var(--p)}
+.empty{padding:40px;text-align:center;color:var(--mut)}
+.guide{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.guide div{padding:22px;border-radius:20px;background:linear-gradient(145deg,color-mix(in srgb,var(--p) 12%,var(--card)),var(--card));border:1px solid var(--line)}
+.guide h3{margin-bottom:8px;font-size:1.05rem}.guide p{margin:0;color:var(--mut);font-size:.94rem}
+.brands{display:flex;flex-wrap:wrap;gap:12px 28px;font:700 1.15rem Sora,sans-serif;color:var(--mut)}
+footer{margin-top:40px;padding:34px 0 50px;border-top:1px solid var(--line);color:var(--mut);font-size:.88rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:36px}nav{display:none}.orb{max-width:220px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<header><div class="w"><a class="logo" href="#"><i></i>Spin Max</a>
-<nav><a href="#marcas">Marcas</a><a href="#loja">Loja</a><a href="#guia">Guia</a><a href="#dicas">Dicas</a></nav></div></header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><radialGradient id="lb" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#ffc46b"/><stop offset=".55" stop-color="#ff8a1f"/><stop offset="1" stop-color="#e85d00"/></radialGradient><linearGradient id="lr" x1="0" x2="1"><stop offset="0" stop-color="#7a3ff2"/><stop offset="1" stop-color="#1fb86b"/></linearGradient><linearGradient id="lo" x1="0" x2="1"><stop offset="0" stop-color="#ff9a2e"/><stop offset="1" stop-color="#ff6a00"/></linearGradient><symbol id="lg" viewBox="0 0 250 64"><g stroke="url(#lr)" stroke-width="3" stroke-linecap="round" fill="none"><path d="M2 40h12M6 48h14M2 56h8"/><g transform="rotate(-22 44 30)"><path d="M14 30A30 10 0 0 1 74 30"/></g></g><circle cx="44" cy="30" r="20" fill="url(#lb)"/><ellipse cx="37" cy="21" rx="7" ry="4" fill="#fff" opacity=".55" transform="rotate(-30 37 21)"/><g transform="rotate(-22 44 30)"><path d="M14 30A30 10 0 0 0 74 30" fill="none" stroke="url(#lr)" stroke-width="3" stroke-linecap="round"/></g><text x="84" y="43" font-family="Sora,system-ui,sans-serif" font-weight="800" font-size="30" transform="skewX(-8)" style="fill:var(--ink)">SPIN <tspan fill="url(#lo)">MAX</tspan></text><rect x="78" y="52" width="168" height="3.5" rx="2" fill="url(#lr)"/></symbol></defs></svg>
+<header><div class="w"><a class="brand" href="#topo" aria-label="Spin Max – início"><svg viewBox="0 0 40 40" aria-hidden="true"><g transform="rotate(-22 20 20)"><path d="M2 20A18 6.5 0 0 1 38 20" fill="none" stroke="url(#lr)" stroke-width="2.6" stroke-linecap="round"/></g><circle cx="20" cy="20" r="12.5" fill="url(#lb)"/><ellipse cx="16" cy="14.5" rx="4.5" ry="2.6" fill="#fff" opacity=".55" transform="rotate(-30 16 14.5)"/><g transform="rotate(-22 20 20)"><path d="M2 20A18 6.5 0 0 0 38 20" fill="none" stroke="url(#lr)" stroke-width="2.6" stroke-linecap="round"/></g></svg><span>Spin <i>Max</i></span></a><nav><a href="#loja">Loja</a><a href="#guia">Guia</a><a href="#marcas">Marcas</a></nav></div></header>
+<main id="topo">
+<div class="w hero">
+ <div><h1>Tudo para o seu divertimento e lazer.</h1>
+ <p>Borrachas, madeiras, bolinhas, sidetapes e camisas das principais marcas de tênis de mesa. Compare e compre direto nas lojas que você já conhece para amadores e profissionais.</p>
+ <p><a class="btn" href="#loja">Ver produtos</a></p></div>
+ <img class="herologo" data-logo alt="Logo SpinMax">
+</div>
+<div class="w"><div class="hl" id="hl" role="group" aria-label="Linhas em destaque"></div></div>
 
-<div class="hero"><div class="w">
-<div><h1>Tudo para a sua raquete.</h1>
-<p>Borrachas, madeiras e bolinhas de Butterfly, Donic, Joola, Xiom, Yasaka e DHS. Não sabe por onde começar? Responda 3 perguntas e veja qual marca combina com o seu jogo.</p>
-<a class="btn" href="#loja">Ver produtos</a><a class="btn o" href="#guia">Escolher minha marca</a></div>
-<svg class="paddle" viewBox="0 0 320 320" role="img" aria-label="Logo Spin Max"><defs><radialGradient id="lg" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffc98f"/><stop offset=".45" stop-color="#ff7a1a"/><stop offset="1" stop-color="#d94e00"/></radialGradient></defs><g stroke="#fff" stroke-linecap="round" opacity=".55"><path d="M10 95h60" stroke-width="6"/><path d="M0 125h50" stroke-width="6"/><path d="M18 155h44" stroke-width="6"/></g><g class="bl"><circle cx="185" cy="125" r="88" fill="url(#lg)"/><ellipse cx="185" cy="125" rx="118" ry="34" transform="rotate(-28 185 125)" fill="none" stroke="#fff" stroke-width="7" stroke-dasharray="150 40 70 40" stroke-linecap="round"/><path d="M135 85a62 62 0 0 1 40-24" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="9" stroke-linecap="round"/></g><text x="160" y="272" text-anchor="middle" font-family="'Barlow Condensed','Arial Narrow',sans-serif" font-weight="800" font-style="italic" font-size="78" fill="#fff" letter-spacing="2">SPIN <tspan fill="#ff7a1a">MAX</tspan></text><path d="M70 292h180" stroke="#ff7a1a" stroke-width="5" stroke-linecap="round"/></svg>
-</div></div>
+<section id="loja"><div class="w">
+ <h2>Loja</h2><p class="sub">Cada botão leva à busca do produto na loja. Só aparecem as lojas que costumam vender aquele tipo de item.</p>
+ <div class="tools"><input type="search" id="q" placeholder="Buscar produto ou marca: Tenergy, Hurricane, Dynaryz…" aria-label="Buscar"><div class="hl" id="cats"></div><div class="hl" id="brs"></div></div>
+ <div class="grid" id="grid"></div>
+</div></section>
 
-<section id="marcas"><div class="w">
-<h2>Marcas</h2><p class="sub">Toque em uma marca para filtrar a loja.</p>
-<div class="brands" id="brands"></div></div></section>
+<section id="guia"><div class="w"><h2>Guia rápido de compra</h2><p class="sub">Para escolher sem erro.</p>
+ <div class="guide">
+ <div><h3>Borracha</h3><p>Mais giro e arco (Dignics, Tenergy, Hurricane) pedem controle. Borrachas mais rápidas e macias, como a linha Dynaryz, ajudam quem quer variar o efeito.</p></div>
+ <div><h3>Madeira</h3><p>All-round dá controle. Off e off+ trazem velocidade e exigem técnica melhor. Carbono deixa a resposta mais seca.</p></div>
+ <div><h3>Bolinha</h3><p>Para treino e competição, use 40+ três estrelas. Bolinhas de uma estrela servem para robô e exercícios.</p></div>
+ <div><h3>Autenticidade</h3><p>Em marketplaces, confira vendedor oficial, nota e avaliações com foto antes de comprar produtos de marca.</p></div>
+ </div></div></section>
 
-<section id="loja" style="padding-top:0"><div class="w">
-<h2>Loja</h2><p class="sub">Escolha a categoria e a marca. Escolha onde comprar: Mercado Livre ou AliExpress.</p>
-<div class="bar" id="fc" role="group" aria-label="Categoria"></div>
-<div class="bar" id="fb" role="group" aria-label="Marca"></div>
-<div class="grid" id="grid" aria-live="polite"></div></div></section>
-
-<section class="g" id="guia"><div class="w">
-<h2>Guia: qual marca é a minha?</h2><p class="sub">Três perguntas rápidas. É uma sugestão de partida, não uma regra.</p>
-<div class="q" id="quiz"></div></div></section>
-
-<section id="dicas"><div class="w">
-<h2>Como escolher o material</h2><p class="sub">O básico para não errar na compra.</p>
-<div class="tips">
-<div><h3>Madeira (blade)</h3><p>Mais camadas e carbono dão velocidade e menos tato. All-round (5 camadas de madeira) é o ideal para aprender.</p></div>
-<div><h3>Borracha</h3><p>Lisa (liso) gera efeito e velocidade. Esponja fina controla mais; grossa (2.0 mm) rende mais potência.</p></div>
-<div><h3>Borracha chinesa vs. europeia</h3><p>Chinesas (DHS, Yasaka) têm superfície dura e tensionada; europeias (Donic, Joola, Butterfly) são mais fáceis de dominar.</p></div>
-<div><h3>Bolinhas</h3><p>Use bolinhas de plástico 40+ com 3 estrelas em treinos sérios e torneios. 1 estrela serve para treino de cesto.</p></div>
-<div><h3>Cores e lados</h3><p>Uma borracha vermelha e outra preta são obrigatórias pela regra oficial.</p></div>
-<div><h3>Manutenção</h3><p>Limpe a borracha com espuma úmida e guarde com película protetora para durar mais.</p></div>
-</div></div></section>
-
-<footer><div class="w">Spin Max · Marcas citadas pertencem aos seus respectivos donos. Preços de referência: confirme no anúncio. Dúvidas? <a href="https://wa.me/5532999999999" rel="noopener">Fale no WhatsApp</a>.</div></footer>
+<section id="marcas"><div class="w"><h2>Marcas</h2><p class="sub">Clique para filtrar.</p>
+ <div class="brands" id="bl"></div></div></section>
+</main>
+<footer><div class="w">
+ <img class="lgo" data-logo alt="SpinMax">
+ <p>Divulgação: o SpinMax pode receber comissão por compras feitas pelos links, sem custo extra para você. Marcas e nomes pertencem aos seus donos; o SpinMax não é revendedor oficial. Preços e disponibilidade mudam e são os mostrados em cada loja.</p>
+</div></footer>
 
 <script>
-var B={Butterfly:{c:'#d4152b',d:'Referência mundial. Qualidade constante, linha Tenergy e Dignics.'},
-Donic:{c:'#1b6fb5',d:'Alemã. Controle e ótimo custo-benefício.'},
-Joola:{c:'#e8a000',d:'Alemã. Bom equilíbrio para quem está evoluindo.'},
-Xiom:{c:'#7a3fb0',d:'Coreana. Rápida, com muita rotação, preço acessível.'},
-Yasaka:{c:'#2f8a55',d:'Japonesa. Madeiras clássicas e borrachas de alto efeito.'},
-Yinhe:{c:'#0d8a8a',d:'Chinesa. Madeiras ofensivas de alto desempenho.'},
-Stiga:{c:'#d4a017',d:'Sueca. Madeiras clássicas usadas por campeões.'},
-DHS:{c:'#c8202f',d:'Chinesa. Hurricane: o padrão do estilo chinês.'}};
-/* Lojas por marca: ml = Mercado Livre, ali = AliExpress */
-var L={Butterfly:['ml'],Donic:['ml'],Joola:['ml'],Xiom:['ml'],Stiga:['ml'],DHS:['ml','ali'],Yinhe:['ml','ali'],Yasaka:['ml','ali']};
-/* Formato: [categoria, marca, nome, descrição, preço, links opcionais]
-   links opcionais: {ml:'link do Mercado Livre', ali:'link do AliExpress'}
-   imagem própria: {img:'imagens/foto.jpg'} ou um link https; use ml:false ou ali:false para esconder uma loja; um link informado mostra a loja mesmo que a marca não a use */
-var P=[
-['Borracha','Butterfly','Tenergy 05','A Tenergy combina a tecnologia High Tension com a esponja Spring Sponge. Os pinos de código 05 permitem imprimir muito efeito à bola e uma gama completa de jogadas com topspin.',519],
-['Borracha','Butterfly','Dignics 05','Eleva seu jogo a um nível mais avançado: esponja Spring Sponge X, mais elástica, e camada superior com abrasão reforçada, para sensação de controle total no impacto. Recomendada para jogo ofensivo de alto nível, com topspin potente e contra-topspin perto e a média distância.',645],
-['Borracha','Butterfly','Dignics 09c','Fricção ideal e alto ressalto, graças à camada superior original com a Spring Sponge X, bastante rígida. Pinos de código 209 favorecem topspin, jogo defensivo com alto giro e técnicas sobre a mesa.',645],
-['Borracha','Butterfly','Rozena','Equipada com a tecnologia Spring Sponge, tem como principal característica a alta tolerância. A tecnologia High Tension permite golpes potentes e muita consistência no jogo.',339],
-['Borracha','Butterfly','Glayzer 09C','Com Grey Spring Sponge X, permite golpes de trajetória estável, combinando efeitos potentes com a facilidade de técnicas de alto nível sobre a mesa. Esponja de dureza 42 graus.',419],
-['Borracha','Butterfly','Glayzer','Utiliza a esponja Spring Sponge X, de dureza 38 graus. Trajetória estável, boa sensação ao segurar a bola e superfície resistente à abrasão.',419],
-['Borracha','Butterfly','Zyre-03','Versão 2.7 mm, de alto desempenho, que integra a tecnologia Ricosheet à esponja Spring Sponge X. Destinada a jogadores de nível profissional com estilo ofensivo em spin e potência.',889],
-['Borracha','Donic','Bluefire M1','Esponja macia, muito controle e efeito.',280],
-['Borracha','Joola','Rhyzm','Equilíbrio entre efeito e velocidade.',300],
-['Borracha','Xiom','Vega Pro','Descubra por que a XIOM Vega Pro é a borracha mais consagrada e amada da série Vega. Projetada para o jogador profissional e aspirante, ela definiu um novo padrão de performance com sua icônica esponja preta.',280],
-['Borracha','Yasaka','Rakza 7','Bom para ataque e topspin.',245.99],
-['Borracha','DHS','Hurricane 3 Neo','Estilo chinês, muito efeito. Exige técnica.',230],
-['Borracha','DHS','Hurricane 8','Estilo chinês, muito efeito. Exige técnica.',230],
-['Borracha','DHS','GoldArc 9','Estilo europeu, controle e spin em suas mãos.',230],
-['Madeira','Butterfly','Timo Boll ALC','Projetada com a ajuda de Timo Boll: um pouco mais de velocidade que o modelo anterior, com os topspins potentes pelos quais ele é conhecido. Combinação máxima de velocidade, efeito forte e controle.',1005.79],
-['Madeira','Butterfly','Fan Zhendong ALC','Equipada com ZL-Carbon, fibra com excelente equilíbrio entre elasticidade e flexibilidade. Combina potência com estabilidade.',1467.94],
-['Madeira','Butterfly','Fan Zhendong Super ALC','Super ZL-Carbon, trama de alta densidade de carbono e fibra ZL, com bom rebote para golpes potentes e estabilidade.',2174.75],
-['Madeira','Donic','Waldner Senso Carbon','Equilíbrio entre controle e velocidade.',550],
-['Madeira','Donic','Donic Original Carbospeed','OFF / OFF+ (ofensiva / extremo ofensiva).',550],
-['Madeira','Joola','Rosskopf Classic','Controle para jogo de base.',320],
-['Madeira','Xiom','Novus Extreme S','A madeira de tênis de mesa Xiom Novus Extreme S combina velocidade e precisão para atletas ofensivos.',370],
-['Madeira','Yasaka','Ma Lin Extra','Clássica, queridinha dos jogadores.',437.99],
-['Madeira','Yinhe','Yinhe V14 Pro','Madeira de alto desempenho, muito popular como alternativa de ótimo custo-benefício a modelos clássicos como a Butterfly Viscaria ou Timo Boll ALC.',350],
-['Madeira','Yinhe','Yinhe T11s','Madeira de alto desempenho, conhecida pela extrema leveza e velocidade explosiva.',132.99],
-['Madeira','Yinhe','Yinhe Pro 01','Lâmina de alto desempenho, alternativa de ótimo custo-benefício, frequentemente comparada à clássica Butterfly Viscaria.',217.99],
-['Madeira','DHS','Hurricane Long 5','Madeira chinesa de ataque.',420],
-['Madeira','Stiga','Cybershape Future 3-star','Madeira clássica do famoso jogador Truls Moregardh.',2789],
-['Bolinha','Butterfly','G40+ 3 estrelas (3 un.)','Bolinha de torneio.',60],
-['Bolinha','Donic','Elite 40+ 3 estrelas (3 un.)','Aprovada para competição.',55],
-['Bolinha','Joola','Prime 40+ (3 un.)','Resistente para treino e jogo.',50],
-['Bolinha','DHS','D40+ 3 estrelas (6 un.)','Usada em campeonatos.',90]];
-var cat='Todas',br='Todas';
-function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function chips(id,list,cur,fn){var e=document.getElementById(id);e.innerHTML='';list.forEach(function(v){var b=document.createElement('button');b.className='chip';b.textContent=v;b.setAttribute('aria-pressed',v===cur);b.onclick=function(){fn(v)};e.appendChild(b)})}
+// ===== CONFIGURAÇÃO DE AFILIADO: cole seus IDs aqui =====
+const AFF={amazon:"",ml:"",ali:"",shopee:"",temu:""};
+const STORES={
+ A:{n:"Amazon",u:q=>`https://www.amazon.com.br/s?k=${encodeURIComponent(q)}`+(AFF.amazon?`&tag=${AFF.amazon}`:"")},
+ M:{n:"Mercado Livre",u:q=>`https://lista.mercadolivre.com.br/${q.trim().replace(/\s+/g,"-")}`+(AFF.ml?`?matt_tool=${AFF.ml}`:"")},
+ X:{n:"AliExpress",u:q=>`https://pt.aliexpress.com/wholesale?SearchText=${encodeURIComponent(q)}`+(AFF.ali?`&aff_fcid=${AFF.ali}`:"")},
+ S:{n:"Shopee",u:q=>`https://shopee.com.br/search?keyword=${encodeURIComponent(q)}`+(AFF.shopee?`&af_id=${AFF.shopee}`:"")},
+ T:{n:"Temu",u:q=>`https://www.temu.com/br/search_result.html?search_key=${encodeURIComponent(q)}`+(AFF.temu?`&refer_id=${AFF.temu}`:"")}
+};
+const P=[
+{c:"Borrachas",b:"Butterfly",n:"Tenergy 05",d:"A referência em giro e velocidade, com tecnologia Spring Sponge. dureza da esponja:36 Velocidade: 83 Rodar: 76 Arco: 79.",s:"M",star:1},
+{c:"Borrachas",b:"Butterfly",n:"Dignics 05",d:"Superfície Dignics com esponja equilibrada para giro e controle. Tecnologia: Alta tensão, esponja de mola X. Dureza da esponja: 40 Velocidade: 86 Rodar: 85 Arco: 88.",s:"M",star:1},
+{c:"Borrachas",b:"Butterfly",n:"Dignics 09C",d:"Mais giro e controle com a superfície Dignics, usada por profissionais. Tecnologia: Alta tensão, esponja de mola X. Dureza da esponja: 44 Velocidade: 79 Rodar: 96 Arco: 96.",s:"M",star:1},
+{c:"Borrachas",b:"Butterfly",n:"Rozena",d:"Borracha de alto giro com toque macio e ótima sensação de bola. Tecnologia: Alta tensão, esponja de mola. Dureza da esponja: 35 Velocidade: 83 Rodar: 70 Arco: 75.",s:"M"},
+{c:"Borrachas",b:"Butterfly",n:"Glayzer 09C",d:"Esponja mais macia e toque confortável, ótima para jogo ativo. Tecnologia: Alta tensão, esponja de mola X. Dureza da esponja: 42 Velocidade: 75 Rodar: 87 Arco: 95.",s:"M",star:1},
+{c:"Borrachas",b:"Butterfly",n:"Glayzer",d:"Linha Glayzer com boa relação entre giro, velocidade e controle. Alta tensão, esponja de mola X. Dureza da esponja: 38 Velocidade: 81 Rodar: 73 Arco: 82.",s:"M",star:1},
+{c:"Borrachas",b:"Butterfly",n:"Zyre-03",d:"Borracha moderna de alto desempenho para jogo ofensivo. Tecnologia: Alta Tensão, Esponja de Mola X, Ricosheet. Dureza da esponja: 44 Velocidade: 88 Rodar: 100 Arco: 96.",s:"M",star:1},
+{c:"Borrachas",b:"DHS",n:"Hurricane 3",d:"O clássico de pele dura chinesa: giro intenso e muito popular.",s:"XMS",star:1},
+{c:"Borrachas",b:"DHS",n:"Hurricane 3 Neo",d:"Versão Neo com esponja mais dura e giro explosivo.",s:"XMS",star:1},
+{c:"Borrachas",b:"DHS",n:"Hurricane 3 National",d:"Versão National, mais firme, usada pela seleção chinesa.",s:"XMS",star:1},
+{c:"Borrachas",b:"DHS",n:"Hurricane 8",d:"Pele dura com esponja de alta tensão para ataque forte.",s:"XMS",star:1},
+{c:"Borrachas",b:"DHS",n:"GoldArc 9",d:"Borracha tensionada de giro alto e saída rápida.",s:"XMS"},
+{c:"Borrachas",b:"DHS",n:"Hurricane Long 5",d:"Borracha de pino longo para jogo defensivo e de variação.",s:"XMS"},
+{c:"Borrachas",b:"Joola",n:"Dynaryz ACC",d:"Linha Dynaryz com esponja de alta tensão para velocidade e giro.",s:"AM",star:1},
+{c:"Borrachas",b:"Joola",n:"Dynaryz ZGR",d:"Linha Dynaryz com esponja macia e toque confortável.",s:"AM",star:1},
+{c:"Borrachas",b:"Joola",n:"Dynaryz ZGX",d:"Linha Dynaryz com resposta mais rápida e firme.",s:"AM",star:1},
+{c:"Borrachas",b:"Joola",n:"Rhyzm",d:"Borracha com boa combinação de giro e controle.",s:"AM"},
+{c:"Borrachas",b:"Donic",n:"BlueFire M1",d:"Borracha de ataque com esponja azul e muito giro.",s:"AM"},
+{c:"Borrachas",b:"Tibhar",n:"Tibhar Hybrid K3",d:"Borracha para alta performance, Espessura: Max,  Estilo: OFF+, Velocidade: 118, Controle: 100, Spin: 130, Dureza: 53º.",s:"M",star:1},
+{c:"Borrachas",b:"Tibhar",n:"Tibhar Hybrid K3 pro",d:"Borracha para alta performance, VELOCIDADE 125, CONTROLE 90, EFEITO 130, DUREZA 55°, ESPESSURA 2,0mm máx. ESTRATÉGIA OFF+",s:"M",star:1},
+{c:"Borrachas",b:"Tibhar",n:"Tibhar Hybrid MK",d:"Borracha para alta performance, Dureza da Esponja: 48°, ESPESSURA 2,0mm máx.",s:"M",star:1},
+{c:"Borrachas",b:"Tibhar",n:"Tibhar Grass D.tecs Ox",d:"Umas das borrachas com o maior poder de inversão de efeitos do mundo.",s:"M",star:1},
+{c:"Borrachas",b:"Xiom",n:"Vega Pro",d:"Borracha popular com bom spin e custo-benefício. Dureza: 47,5 Impulsão: 4.6 Efeito: 5.0 Velocidade: 6.0 Avaliação Pro: 5.2 Avaliação Amador: 4.7 Espessura: MAX",s:"M"},
+{c:"Borrachas",b:"Xiom",n:"Omega VII tour",d:"Borracha com bom spin, controle e velocidade, nível profissional. Velocidade: 13 Rotação: 12 Controle: 8 Esponja: 2,2mm Max Dureza: Hard Densidade: 55° Estilo: OFF+",s:"M"},
+{c:"Borrachas",b:"Xiom",n:"Omega VIII pro",d:"Borracha com bom spin, controle e velocidade, nível profissional. Dureza: 47,5° Efeito: 6,7 Velocidade: 6,0 Impulso: 6,4.",s:"M"},
+{c:"Borrachas",b:"Yasaka",n:"Rakza 7",d:"Referência em controle e giro, ótima para ofensivos.",s:"AM"},
+{c:"Madeiras",b:"Butterfly",n:"Viscaria",d:"Madeira ALC de referência, equilíbrio entre velocidade e sensação.",s:"M"},
+{c:"Madeiras",b:"Butterfly",n:"Timo Boll ALC",d:"Madeira ALC com controle excelente e boa potência.",s:"M"},
+{c:"Madeiras",b:"Butterfly",n:"Fan Zhendong ALC",d:"Madeira ALC ofensiva inspirada no campeão Fan Zhendong.",s:"M"},
+{c:"Madeiras",b:"Butterfly",n:"Fan Zhendong Super ALC",d:"Versão mais rápida da linha Fan Zhendong, para ataque.",s:"M"},
+{c:"Madeiras",b:"Stiga",n:"Clipper CR WRB",d:"All+ de 7 camadas, clássica entre quem busca controle e potência.",s:"M"},
+{c:"Madeiras",b:"Stiga",n:"Cybershape Future 3 Star",d:"Madeira Stiga com tecnologia Cybershape.",s:"M"},
+{c:"Madeiras",b:"Tibhar",n:"Samsonov STRATUS POWERWOOD",d:"VELOCIDADE: 9 CONTROLE: 7+ PESO: 85g FOLHAS: 5 ESTRATÉGIA: OFF-.", s:"M",star:1},
+{c:"Madeiras",b:"Donic",n:"Donic",d:"Variedades de raquetes montadas para seu divertimento.",s:"AM"},
+{c:"Madeiras",b:"Donic",n:"Donic Original Carbospeed",d:"Madeira de carbono rápida para jogo ofensivo.",s:"AM"},
+{c:"Madeiras",b:"Joola",n:"Rosskopf Classic",d:"Madeira clássica, com toque macio e controle.",s:"AM"},
+{c:"Madeiras",b:"Nittaku",n:"Acoustic Carbon",d:"Construção japonesa com sensação macia e resposta firme.",s:"AM"},
+{c:"Madeiras",b:"Xiom",n:"Novus Extreme S",d:"Madeira rápida da Xiom para jogadores ofensivos. Composição da Madeira: Limba (2 Camadas Externas), Ayous e Kiri (5 Camada Interna) - Impulsão: 8.1 - Aderência: 8.8 - Repulsão: 9.5 - Precisão: 8.3",s:"M"},
+{c:"Madeiras",b:"Yasaka",n:"Ma Lin Extra",d:"Madeira clássica de ataque, assinada por Ma Lin.",s:"AM"},
+{c:"Madeiras",b:"Yinhe",n:"Yinhe V14 Pro",d:"Madeira Yinhe de ataque, ótima para quem busca velocidade.",s:"XMS"},
+{c:"Madeiras",b:"Yinhe",n:"Yinhe T11S",d:"Madeira Yinhe com boa relação entre velocidade e controle.",s:"XMS"},
+{c:"Madeiras",b:"Yinhe",n:"Yinhe Pro 01",d:"Madeira Yinhe de entrada, com ótimo custo-benefício.",s:"XMS"},
+{c:"Madeiras",b:"Yinhe",n:"Galaxy Milky Way",d:"Madeira tradicional chinesa, ótimo custo-benefício.",s:"XMS"},
+{c:"Bolinhas",b:"Butterfly",n:"G40+ 3 Estrelas 3 un",d:"Bolinha de competição 40+ três estrelas, pacote com 3.",s:"M"},
+{c:"Bolinhas",b:"Donic",n:"Elite 40+ 3 Estrelas 3 un",d:"Bolinha 40+ três estrelas, pacote com 3.",s:"AM"},
+{c:"Bolinhas",b:"Joola",n:"Prime 40+ 3 un",d:"Bolinha 40+ de boa qualidade, pacote com 3.",s:"AM"},
+{c:"Bolinhas",b:"DHS",n:"D40+ 3 Estrelas 6 un",d:"Bolinha de competição com acabamento uniforme, pacote com 6.",s:"XMS"},
+{c:"Bolinhas",b:"Nittaku",n:"Premium 40+ 3 Estrelas",d:"Bolinha oficial de competição, redondeza e quique consistentes.",s:"AMS"},
+{c:"Bolinhas",b:"Joola",n:"Training 40+",d:"Pacote para treino, resistente e econômico.",s:"AMST"},
+{c:"Sidetape",b:"Butterfly",n:"Sidetape Original",d:"Protege a borda da raquete com acabamento firme.",s:"M"},
+{c:"Sidetape",b:"Genérico",n:"Sidetape 12 mm",d:"Fita lateral para proteger e personalizar sua raquete.",s:"MXST"},
+{c:"Camisas",b:"Butterfly",n:"Camisa de Jogo",d:"Tecido leve que seca rápido, corte esportivo.",s:"MXST"},
+{c:"Camisas",b:"Joola",n:"Camisa Dry-Fit",d:"Conforto e respirabilidade para treinos longos.",s:"MXST"},
+{c:"Camisas",b:"Genérico",n:"Camisa Tênis de Mesa",d:"Camisa leve para treino, em várias cores.",s:"MXST"},
+{c:"Acessórios",b:"Genérico",n:"Limpador de Borracha",d:"Remove poeira e prolonga o grip da borracha.",s:"AMXST"}
+];
+const COL={Butterfly:"#7a3ff2",Joola:"#1fb86b",Tibhar:"#e0527a",Donic:"#2f7de1",Stiga:"#e0a020",DHS:"#d93a3a",Nittaku:"#1d1633",Yinhe:"#14a3a3",Xiom:"#e0527a",Yasaka:"#d93a3a","Genérico":"#6b6585"};
+const art=(p)=>{const k=COL[p.b]||"#7a3ff2";const T={
+Borrachas:`<svg viewBox="0 0 120 100"><ellipse cx="60" cy="58" rx="46" ry="30" fill="#2a2140"/><ellipse cx="60" cy="50" rx="46" ry="30" fill="#d93a3a"/><ellipse cx="60" cy="50" rx="38" ry="23" fill="none" stroke="#fff" stroke-opacity=".45" stroke-dasharray="2 4"/><text x="60" y="55" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Sora">${p.n.split(" ")[0]}</text></svg>`,
+Madeiras:`<svg viewBox="0 0 100 130"><rect x="43" y="78" width="14" height="46" rx="6" fill="#b9854f"/><ellipse cx="50" cy="42" rx="40" ry="38" fill="#d7a468"/><ellipse cx="50" cy="42" rx="33" ry="31" fill="none" stroke="${k}" stroke-width="3"/><path d="M20 30q30 10 60 0M18 48q32 10 64 0" stroke="#a8743e" stroke-opacity=".5" fill="none"/></svg>`,
+Bolinhas:`<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="#ff9f43"/><circle cx="38" cy="38" r="9" fill="#fff" fill-opacity=".35"/><text x="50" y="61" text-anchor="middle" font-size="16" fill="#fff" font-weight="700">★★★</text></svg>`,
+Sidetape:`<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="${k}"/><circle cx="50" cy="50" r="17" fill="#fff"/><circle cx="50" cy="50" r="38" fill="none" stroke="#fff" stroke-opacity=".4" stroke-dasharray="3 5"/><path d="M82 70l14 14" stroke="${k}" stroke-width="8" stroke-linecap="round"/></svg>`,
+Camisas:`<svg viewBox="0 0 120 110"><path d="M40 12l-30 20 12 20 14-8v52h48V44l14 8 12-20-30-20q-8 10-20 10t-20-10z" fill="${k}"/><path d="M48 12q12 12 24 0" fill="none" stroke="#fff" stroke-width="3"/><circle cx="60" cy="62" r="9" fill="#fff" fill-opacity=".85"/></svg>`,
+"Acessórios":`<svg viewBox="0 0 100 100"><rect x="30" y="30" width="40" height="54" rx="8" fill="${k}"/><rect x="40" y="16" width="20" height="18" rx="4" fill="#1d1633"/><rect x="38" y="48" width="24" height="16" rx="3" fill="#fff" fill-opacity=".8"/></svg>`};return T[p.c]};
+const LOGO="data:image/png;base64,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";document.querySelectorAll("img[data-logo]").forEach(i=>i.src=LOGO);
+const $=id=>document.getElementById(id);
+let cat="Todos",br="Todas",q="";
+const cats=["Todos",...new Set(P.map(p=>p.c))],brs=["Todas",...new Set(P.map(p=>p.b).filter(b=>b!=="Genérico")),"Genérico"];
+const mk=(id,arr,get,set,cls)=>{$(id).innerHTML="";arr.forEach(v=>{const b=document.createElement("button");b.className="chip"+(get()===v?" on":"");b.textContent=v;b.onclick=()=>{set(v);draw()};$(id).appendChild(b)})};
 function draw(){
-chips('fc',['Todas','Borracha','Madeira','Bolinha'],cat,function(v){cat=v;draw()});
-chips('fb',['Todas'].concat(Object.keys(B)),br,function(v){br=v;draw()});
-var h='';P.forEach(function(p){if((cat!='Todas'&&p[0]!=cat)||(br!='Todas'&&p[1]!=br))return;
-var q=encodeURIComponent(p[1]+' '+p[2]+' tenis de mesa');
-var ml='https://lista.mercadolivre.com.br/'+q.replace(/%20/g,'-');
-var ali='https://pt.aliexpress.com/wholesale?SearchText='+q;
-var o=p[5]||{};
-var slug=(p[1]+' '+p[2]).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-var img=o.img||('imagens/'+slug+'.jpg');
-var S=[['Mercado Livre',ml,'ml'],['AliExpress',ali,'ali']];
-var ok=L[p[1]]||['ml'];
-var bt='';S.forEach(function(s){var k=s[2],c=o[k];var u=typeof c==='string'?c:s[1];
-if(c===false||(ok.indexOf(k)<0&&typeof c!=='string'))return;
-bt+='<a class="btn '+k+'" target="_blank" rel="noopener" href="'+u+'">'+s[0]+'</a>'});
-h+='<div class="p" style="border-top:5px solid '+B[p[1]].c+'"><div class="ph" style="--c:'+B[p[1]].c+'">'+p[1]+'<img src="'+img+'" alt="'+esc(p[1]+' '+p[2])+'" loading="lazy" onerror="this.remove()"></div><span class="tag">'+p[0]+' · '+p[1]+'</span><h3>'+esc(p[2])+'</h3><p class="d" title="Clique para ler mais">'+esc(p[3])+'</p><div class="row"><b>R$ '+p[4].toLocaleString('pt-BR')+'</b></div><div class="buy">'+bt+'</div></div>'});
-document.getElementById('grid').innerHTML=h||'<p class="sub">Nenhum produto com esse filtro. Tente outra marca.</p>'}
-var bh='';Object.keys(B).forEach(function(k){bh+='<button class="brand" style="--c:'+B[k].c+'" data-b="'+k+'"><h3>'+k+'</h3><small>'+B[k].d+'</small></button>'});
-document.getElementById('brands').innerHTML=bh;
-document.getElementById('brands').onclick=function(e){var b=e.target.closest('.brand');if(!b)return;br=b.dataset.b;cat='Todas';draw();document.getElementById('loja').scrollIntoView()};
-document.getElementById('grid').onclick=function(e){var d=e.target.closest('.d');if(d)d.classList.toggle('open')};
+ mk("cats",cats,()=>cat,v=>cat=v);mk("brs",brs,()=>br,v=>br=v);
+ const L=P.filter(p=>(cat==="Todos"||p.c===cat)&&(br==="Todas"||p.b===br)&&(`${p.b} ${p.n} ${p.c} ${p.d}`).toLowerCase().includes(q));
+ $("grid").innerHTML=L.length?L.map(p=>{const term=`${p.b==="Genérico"?"":p.b+" "}${p.n} tênis de mesa`.trim();
+  return `<article class="card"><div class="bd"><div class="tag"><span>${p.c} · ${p.b}</span>${p.star?"<b>Destaque</b>":""}</div><h3>${p.n}</h3><p>${p.d}</p><div class="shops">${[...p.s].map(k=>`<a href="${STORES[k].u(term)}" target="_blank" rel="sponsored noopener nofollow" aria-label="Ver ${p.n} na ${STORES[k].n}">${STORES[k].n}</a>`).join("")}</div></div></article>`}).join(""):`<div class="empty">Nenhum produto encontrado. Tente outro termo ou limpe os filtros.</div>`;
+}
+["Dignics","Zyre","Hurricane","Dynaryz","Glayzer","Tenergy"].forEach(t=>{const b=document.createElement("button");b.className="chip star";b.textContent=t;b.onclick=()=>{q=t.toLowerCase();$("q").value=t;cat="Todos";br="Todas";draw();$("loja").scrollIntoView()};$("hl").appendChild(b)});
+$("q").oninput=e=>{q=e.target.value.toLowerCase().trim();draw()};
+["Butterfly","Joola","Tibhar","Donic","Stiga","DHS","Nittaku","Yinhe","Xiom","Yasaka"].forEach(b=>{const s=document.createElement("a");s.href="#loja";s.textContent=b;s.onclick=()=>{br=b;cat="Todos";q="";$("q").value="";draw()};$("bl").appendChild(s)});
 draw();
-var Q=[
-{t:'Qual é o seu nível?',o:[['Estou começando','c'],['Jogo por lazer ou em clube','m'],['Compito com frequência','a']]},
-{t:'Como você gosta de jogar?',o:[['Defendo e controlo a bola','c'],['Um pouco de tudo','m'],['Ataco com topspin','a']]},
-{t:'Qual é o seu orçamento?',o:[['Econômico','e'],['Médio','m'],['Sem limite','p']]}];
-var s=0,a=[];
-function quiz(){var e=document.getElementById('quiz');
-if(s<Q.length){var h='<h3>'+Q[s].t+'</h3><div class="opts">';Q[s].o.forEach(function(o,i){h+='<button data-i="'+i+'">'+o[0]+'</button>'});e.innerHTML=h+'</div>';return}
-var lvl=a[0],sty=a[1],bud=a[2],r;
-if(bud=='e')r=['Xiom','Xiom entrega efeito e velocidade com preço acessível. Para iniciantes, comece com uma madeira all-round.'];
-else if(sty=='a'&&bud=='p')r=['Butterfly','Butterfly com Tenergy dá máxima rotação e velocidade para quem ataca e compete.'];
-else if(sty=='a')r=['DHS','Hurricane e outros materiais chineses rendem muito efeito. Exigem mais técnica, mas custam menos.'];
-else if(sty=='c'&&lvl=='c')r=['Donic','Donic oferece controle e preço bom para aprender os golpes sem muita velocidade.'];
-else if(lvl=='a')r=['Yasaka','Yasaka tem madeiras clássicas e borrachas de alto efeito para jogadores completos.'];
-else r=['Joola','Joola oferece materiais equilibrados para evoluir sem pagar caro.'];
-e.innerHTML='<div class="res"><p>Sugestão para você:</p><h3>'+r[0]+'</h3><p>'+r[1]+'</p><button class="btn" id="see">Ver produtos '+r[0]+'</button> <button class="btn o" id="rs">Refazer</button></div>';
-document.getElementById('see').onclick=function(){br=r[0];cat='Todas';draw();document.getElementById('loja').scrollIntoView()};
-document.getElementById('rs').onclick=function(){s=0;a=[];quiz()}}
-document.getElementById('quiz').onclick=function(e){var b=e.target.closest('[data-i]');if(!b)return;a.push(Q[s].o[b.dataset.i][1]);s++;quiz()};
-quiz();
 </script>
 </body>
 </html>
